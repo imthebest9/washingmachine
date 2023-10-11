@@ -239,6 +239,15 @@
             font-size: 1.4rem;
         }
 
+        .carousel-container {
+            overflow: hidden;
+            /* Set a specific width and height for the container */
+            max-width: 100%;
+            max-height: 500px;
+            /* Adjust the height as needed */
+            /* You can also add other styling as per your design requirements */
+        }
+
         /* Floating button */
         #whatsapp-button {
             position: fixed;
@@ -256,10 +265,10 @@
 </head>
 
 <body>
-    <div class="container-fluid bg-primary py-3">
+    <div class="container-fluid bg-primary pt-3">
         <div class="container">
             <div class="row">
-                <div class="col-md-6 text-center text-lg-left mb-2 mb-lg-0">
+                <div class="col-md-6 text-center text-lg-left mb-lg-0">
                     <!-- <div class="d-inline-flex align-items-center">
                         <a class="text-white pr-3" href="">FAQs</a>
                         <span class="text-white">|</span>
@@ -267,15 +276,17 @@
                         <span class="text-white">|</span>
                         <a class="text-white pl-3" href="">Support</a>
                     </div> -->
-                    <a class="text-white px-3" href="">
-                        <i class="fa fa-facebook-f header-icon"></i>
-                    </a>
-                    <p>+60123456789</p>
+                    <div class="d-inline-flex">
+                        <a class="text-white px-3" href="">
+                            <i class="fa fa-phone header-icon"></i>
+                        </a>
+                        <p class="text-white">+60123456789</p>
+                    </div>
                 </div>
                 <div class="col-md-6 text-center text-lg-right">
                     <div class="d-inline-flex align-items-center">
                         <a class="text-white px-3" href="">
-                            <i class="fa fa-facebook-f header-icon"></i>
+                            <i class="fa fa-envelope-o header-icon"></i>
                         </a>
                     </div>
                 </div>
@@ -297,6 +308,7 @@
                         <a href="#" class="nav-item nav-link">Home</a>
                         <a href="#about-us" class="nav-item nav-link">About</a>
                         <a href="#service" class="nav-item nav-link">Services</a>
+                        <a href="#supporting" class="nav-item nav-link">Supporting</a>
                         <a href="#contact" class="nav-item nav-link">Contact</a>
                     </div>
                 </div>
@@ -306,42 +318,45 @@
 
     {{-- Carousel --}}
     <div class="container-fluid p-0">
-        <div id="header-carousel" class="carousel slide" data-ride="carousel">
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <img class="w-100" src="images/carousel-1.jpg" alt="Image">
-                    <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
-                        <div class="p-3" style="max-width: 900px;">
-                            <h4 class="text-white text-uppercase mb-md-3">Laundry & Dry Cleaning</h4>
-                            <h1 class="display-3 text-white mb-md-4">Best For Laundry Services</h1>
-                            {{-- <a href="" class="btn btn-primary py-md-3 px-md-5 mt-2">Learn More</a> --}}
+        <div class="carousel-container">
+            <div id="header-carousel" class="carousel slide" data-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img class="w-100 h-100" src="images/carousel-1.jpg" alt="Image">
+                        <div class="carousel-caption d-flex align-items-center justify-content-center">
+                            <div class="p-3" style="max-width: 900px;">
+                                <h4 class="text-white text-uppercase mb-md-3 text-center">Laundry & Dry Cleaning</h4>
+                                <h1 class="display-3 text-white mb-md-4 text-center">Best For Laundry Services</h1>
+                                {{-- <a href="" class="btn btn-primary py-md-3 px-md-5 mt-2">Learn More</a> --}}
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img class="w-100 h-100" src="images/carousel-2.jpg" alt="Image">
+                        <div class="carousel-caption d-flex align-items-center justify-content-center">
+                            <div class="p-3" style="max-width: 900px;">
+                                <h4 class="text-white text-uppercase mb-md-3 text-center">Laundry & Dry Cleaning</h4>
+                                <h1 class="display-3 text-white mb-md-4 text-center">Highly Professional Staff</h1>
+                                {{-- <a href="" class="btn btn-primary py-md-3 px-md-5 mt-2">Learn More</a> --}}
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="carousel-item">
-                    <img class="w-100" src="images/carousel-2.jpg" alt="Image">
-                    <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
-                        <div class="p-3" style="max-width: 900px;">
-                            <h4 class="text-white text-uppercase mb-md-3">Laundry & Dry Cleaning</h4>
-                            <h1 class="display-3 text-white mb-md-4">Highly Professional Staff</h1>
-                            {{-- <a href="" class="btn btn-primary py-md-3 px-md-5 mt-2">Learn More</a> --}}
-                        </div>
+                <a class="carousel-control-prev" href="#header-carousel" data-slide="prev">
+                    <div class="btn btn-secondary" style="width: 45px; height: 45px;">
+                        <span class="carousel-control-prev-icon mb-n2"></span>
                     </div>
-                </div>
+                </a>
+                <a class="carousel-control-next" href="#header-carousel" data-slide="next">
+                    <div class="btn btn-secondary" style="width: 45px; height: 45px;">
+                        <span class="carousel-control-next-icon mb-n2"></span>
+                    </div>
+                </a>
             </div>
-            <a class="carousel-control-prev" href="#header-carousel" data-slide="prev">
-                <div class="btn btn-secondary" style="width: 45px; height: 45px;">
-                    <span class="carousel-control-prev-icon mb-n2"></span>
-                </div>
-            </a>
-            <a class="carousel-control-next" href="#header-carousel" data-slide="next">
-                <div class="btn btn-secondary" style="width: 45px; height: 45px;">
-                    <span class="carousel-control-next-icon mb-n2"></span>
-                </div>
-            </a>
         </div>
     </div>
     {{-- End Carousel --}}
+
 
     {{-- Learn about us --}}
     <section id="about-us">
@@ -388,8 +403,53 @@
     <section id="service">
         <div class="container">
             <h1 class="title text-center">OUR SERVICES</h1>
+
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="service-card">
+                        <img src="images/services-1.jpg" class="service-img" alt="Service 1">
+                        <div class="service-content">
+                            <h2 class="service-title">Service Title 1</h2>
+                            <p class="service-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla
+                                commodo enim at lectus luctus, ut venenatis velit viverra.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 flex">
+                    <div class="service-card flex flex-col">
+                        <img src="images/services-2.jpg" class="service-img" alt="Service 2">
+                        <div class="service-content">
+                            <h2 class="service-title">Service Title 2</h2>
+                            <p class="service-description">Sed ac quam quis libero bibendum feugiat non at odio. Fusce
+                                euismod felis quis quam sagittis, eu tempor nisl laoreet.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="service-card">
+                        <img src="images/services-3.jpg" class="service-img" alt="Service 3">
+                        <div class="service-content">
+                            <h2 class="service-title">Service Title 3</h2>
+                            <p class="service-description">Aenean nec libero at est fermentum facilisis. Etiam ut quam a
+                                quam vehicula volutpat.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row mt-4">
+                <!-- Add more service cards here -->
+            </div>
+
+            <div class="row mt-4">
+                <!-- Add more service cards here -->
+            </div>
         </div>
     </section>
+
+
+
+
 
     <section class="mb-0" id="contact">
         <div class="container">

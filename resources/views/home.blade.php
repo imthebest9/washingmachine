@@ -31,8 +31,8 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </head>
 
-<body class="bg-white">
-    <div class="container-fluid bg-primary pt-3">
+<body class="">
+    <div class="container-fluid bg-primary pt-3 pb-12 -mb-12">
         <div class="container">
             <div class="row">
                 <div class="col-md-6 text-center text-lg-left mb-lg-0">
@@ -54,7 +54,7 @@
         </div>
     </div>
 
-    <div class="relative">
+    <div class="relative z-30 ">
         <div class="container-lg relative p-0">
             <nav class="navbar navbar-expand-lg bg-white navbar-light py-3 py-lg-0 pl-3 pl-lg-5">
                 <a href="" class="navbar-brand">
@@ -77,28 +77,26 @@
     </div>
 
     {{-- Carousel --}}
-    <div class="p-0 mb-10">
-        <div class="carousel-container overflow-hidden max-w-full h-500px">
+    <div class="p-0 mb-10 -mt-10 container-fluid bg-gray-200">
+        <div class="carousel-container  overflow-hidden max-w-full h-500px relative"> <!-- Add relative class -->
             <div id="header-carousel" class="carousel slide" data-ride="carousel">
-                <div class="carousel-inner">
+                <div class="carousel-inner ">
                     <div class="carousel-item active">
                         <img class="w-full h-full" src="images/carousel-1.jpg" alt="Image">
-                        <div class="carousel-caption bg-transparent flex flex-col items-center justify-center p-3 max-w-900px">
-                            <div class="bg-black bg-opacity-25 p-3 rounded-lg">
+                        <div class="carousel-caption flex flex-col items-center justify-center p-3 max-w-900px">
+                            <div class="p-3">
                                 <h4 class="text-white text-uppercase mb-md-3 text-center">Laundry & Dry Cleaning</h4>
                                 <h1 class="text-5xl text-white mb-md-4 text-center">Best For Laundry Services</h1>
                             </div>
-                            {{-- <a href="" class="btn btn-primary py-md-3 px-md-5 mt-2">Learn More</a> --}}
                         </div>
                     </div>
                     <div class="carousel-item">
                         <img class="w-full h-full" src="images/carousel-2.jpg" alt="Image">
-                        <div class="carousel-caption bg-transparent flex flex-col items-center justify-center p-3 max-w-900px">
-                            <div class="bg-black bg-opacity-25 p-3">
+                        <div class="carousel-caption flex flex-col items-center justify-center p-3 max-w-900px">
+                            <div class="p-3">
                                 <h4 class="text-white text-uppercase mb-md-3 text-center">Laundry & Dry Cleaning</h4>
                                 <h1 class="text-5xl text-white mb-md-4 text-center">Highly Professional Staff</h1>
                             </div>
-                            {{-- <a href="" class="btn btn-primary py-md-3 px-md-5 mt-2">Learn More</a> --}}
                         </div>
                     </div>
                 </div>
@@ -115,6 +113,7 @@
             </div>
         </div>
     </div>
+
 
     {{-- End Carousel --}}
 
@@ -338,7 +337,7 @@
 
 
 
-    <div class="footer mt-5 bg-primary py-6">
+    <div class="footer mt-5 bg-[#344D77] py-6 ">
         <div class="container">
             <div class="row">
                 <div class="col-12 col-md-4 mb-4">

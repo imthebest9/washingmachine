@@ -77,35 +77,37 @@
     </div>
 
     {{-- Carousel --}}
-    <div class="p-0 mb-10 -mt-10 container-fluid bg-gray-200">
-        <div class="carousel-container  overflow-hidden max-w-full h-500px relative"> <!-- Add relative class -->
+    <div class="container-fluid p-0 mb-12">
+        <div class="carousel-container">
             <div id="header-carousel" class="carousel slide" data-ride="carousel">
-                <div class="carousel-inner ">
+                <div class="carousel-inner">
                     <div class="carousel-item active">
-                        <img class="w-full h-full" src="images/carousel-1.jpg" alt="Image">
-                        <div class="carousel-caption flex flex-col items-center justify-center p-3 max-w-900px">
-                            <div class="p-3">
+                        <img class="w-100 h-100" src="images/carousel-1.jpg" alt="Image">
+                        <div class="carousel-caption right-0 left-0 bottom-0 z-5 flex items-center justify-center">
+                            <div class="p-3" style="max-width: 900px;">
                                 <h4 class="text-white text-uppercase mb-md-3 text-center">Laundry & Dry Cleaning</h4>
                                 <h1 class="text-5xl text-white mb-md-4 text-center">Best For Laundry Services</h1>
+                                {{-- <a href="" class="btn btn-primary py-md-3 px-md-5 mt-2">Learn More</a> --}}
                             </div>
                         </div>
                     </div>
                     <div class="carousel-item">
-                        <img class="w-full h-full" src="images/carousel-2.jpg" alt="Image">
-                        <div class="carousel-caption flex flex-col items-center justify-center p-3 max-w-900px">
-                            <div class="p-3">
+                        <img class="w-100 h-100" src="images/carousel-2.jpg" alt="Image">
+                        <div class="carousel-caption right-0 left-0 bottom-0 z-5 flex items-center justify-center">
+                            <div class="p-3" style="max-width: 900px;">
                                 <h4 class="text-white text-uppercase mb-md-3 text-center">Laundry & Dry Cleaning</h4>
                                 <h1 class="text-5xl text-white mb-md-4 text-center">Highly Professional Staff</h1>
+                                {{-- <a href="" class="btn btn-primary py-md-3 px-md-5 mt-2">Learn More</a> --}}
                             </div>
                         </div>
                     </div>
                 </div>
-                <a class="carousel-control-prev" href="#header-carousel" data-slide="prev">
+                <a class="carousel-control-prev z-10" href="#header-carousel" data-slide="prev">
                     <div class="btn btn-secondary w-12 h-12">
                         <span class="carousel-control-prev-icon mb-n2"></span>
                     </div>
                 </a>
-                <a class="carousel-control-next" href="#header-carousel" data-slide="next">
+                <a class="carousel-control-next z-10" href="#header-carousel" data-slide="next">
                     <div class="btn btn-secondary w-12 h-12">
                         <span class="carousel-control-next-icon mb-n2"></span>
                     </div>
@@ -113,7 +115,6 @@
             </div>
         </div>
     </div>
-
 
     {{-- End Carousel --}}
 
@@ -335,47 +336,45 @@
     </section>
 
 
-
-
-    <div class="footer mt-5 bg-[#344D77] py-6 ">
-        <div class="container">
-            <div class="row">
-                <div class="col-12 col-md-4 mb-4">
-                    <div class="footer-logo text-white">
+    <div class="mt-5 bg-[#344D77] py-6 w-screen-3xl">
+        <div class="sm:mx-20 space-x-10 lg:mx-40">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-16">
+                <div class="col-span-1 md:col-span-1">
+                    <h4 class="footer-logo text-white">
                         DRYME
-                    </div>
+                    </h4>
                     <p class="footer-content1 text-white mt-3">
                         Voluptate amet magna clita tempor. Tempor sea eos vero ipsum. Lorem lorem sit sed elitr sit no,
                         sed kasd et ipsum dolor duo dolor
                     </p>
 
                     <div class="social-link mt-3">
-                        <i class="fa fa-facebook-f footer-social-icon mr-3"></i>
-                        <i class="fa fa-whatsapp footer-social-icon"></i>
+                        <i class="fa fa-facebook-f footer-social-icon mr-3 text-white"></i>
+                        <i class="fa fa-whatsapp footer-social-icon text-white"></i>
                     </div>
                 </div>
 
-                <div class="col-12 col-md-4 mb-4">
-                    <div class="footer-title text-white">
+                <div class="col-span-1 md:col-span-1">
+                    <h4 class="footer-title text-white">
                         Get In Touch
-                    </div>
+                    </h4>
                     <p class="footer-content1 text-white mt-3">
                         Everyone is encouraged to come and visit our store.
                     </p>
-                    <div class="shop-contact mt-3">
-                        <i class="fa fa-map-marker footer-icon mr-3"></i>
-                        <p style="margin-left: 1%;" class="text-white">123 Street, New York, USA</p>
+                    <div class="shop-contact mt-3 flex flex-row">
+                        <i class="fa fa-map-marker footer-icon mr-3 text-white mt-1"></i>
+                        <p class="text-white">123 Street, New York, USA</p>
                     </div>
-                    <div class="shop-contact mt-2">
-                        <i class="fa fa-phone footer-icon mr-3"></i>
+                    <div class="shop-contact mt-2 flex flex-row">
+                        <i class="fa fa-phone footer-icon mr-3 text-white mt-1"></i>
                         <p class="text-white">0111258754</p>
                     </div>
                 </div>
 
-                <div class="col-12 col-md-4">
-                    <div class="footer-title text-white">
+                <div class="col-span-1 md:col-span-1">
+                    <h4 class="footer-title text-white">
                         Quick Links
-                    </div>
+                    </h4>
 
                     <div class="flex flex-col justify-start mt-3">
                         <a class="text-white mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Home</a>
@@ -387,6 +386,7 @@
             </div>
         </div>
     </div>
+
 
 
     <div id="whatsapp-button" class="fixed bottom-10 right-10 z-10">

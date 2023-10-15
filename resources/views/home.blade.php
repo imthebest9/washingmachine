@@ -133,17 +133,20 @@
 
         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
             <div class="group relative rounded-xl">
-                <div class="item  text-center p-6 border border-solid border-gray-300 rounded-lg shadow transition duration-300 ease-in-out transform hover:scale-105 hover:bg-red-500 hover:text-white">
-                    <img src="images/washer.png" class="about-img w-24 h-auto m-auto" alt="washer">
+                <div class="item text-center p-6 border border-solid border-gray-300 rounded-lg shadow transition-transform duration-300 ease-in-out transform hover:scale-105 hover:bg-red-500 hover:text-white">
+                    <img src="images/washer.png" class=" w-24 h-auto m-auto transition-opacity duration-300 group-hover:hidden" alt="washer">
+                    <img src="images/washer-white.png" class=" w-24 h-auto m-auto hidden group-hover:block" alt="washer" alt="washer">
                     <p class="text-xl font-bold mt-4 hover:text-white">Modern Equipment</p>
                     <p class="mt-4">
                         We invest in the latest laundry technology and equipment to ensure your clothes are treated with the utmost care and efficiency.
                     </p>
                 </div>
             </div>
+
             <div class="group relative rounded-xl">
                 <div class="item   text-center p-6 border border-solid border-gray-300 rounded-lg shadow transition duration-300 ease-in-out transform hover:scale-105 hover:bg-red-500 hover:text-white">
-                    <img src="images/staff.png" class="about-img w-24 h-auto m-auto" alt="staff">
+                    <img src="images/staff.png" class=" w-24 h-auto m-auto transition-opacity duration-300 group-hover:hidden" alt="washer">
+                    <img src="images/staff-white.png" class=" w-24 h-auto m-auto hidden group-hover:block" alt="washer" alt="washer">
                     <p class="text-xl font-bold mt-4">Professional Care</p>
                     <p class="mt-4">
                         Our experienced staff takes pride in providing expert care for your garments, ensuring they look their best after every wash.
@@ -152,7 +155,8 @@
             </div>
             <div class="group relative rounded-xl">
                 <div class="item   text-center p-6 border border-solid border-gray-300 rounded-lg shadow transition duration-300 ease-in-out transform hover:scale-105 hover:bg-red-500 hover:text-white">
-                    <img src="images/247.png" class="about-img w-24 h-auto m-auto" alt="24/7">
+                    <img src="images/247.png" class=" w-24 h-auto m-auto transition-opacity duration-300 group-hover:hidden" alt="washer">
+                    <img src="images/247-white.png" class=" w-24 h-auto m-auto hidden group-hover:block" alt="washer" alt="washer">
                     <p class="text-xl font-bold mt-4">24/7 Availability</p>
                     <p class="mt-4">
                         We are here for you around the clock, providing 24/7 support to address any questions or concerns you may have regarding our laundry services.

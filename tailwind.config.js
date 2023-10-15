@@ -9,4 +9,9 @@ module.exports = {
         extend: {},
     },
     plugins: [],
+    variants: {
+        extend: {
+            backgroundColor: ["hover"], // Enable hover variants for background color
+        },
+    },
 };

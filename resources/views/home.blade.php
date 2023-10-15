@@ -45,9 +45,6 @@
                 </div>
                 <div class="col-md-6 text-center text-lg-right">
                     <div class="d-inline-flex align-items-center">
-                        <a class="text-white px-3" href="">
-                            <i class="fa fa-envelope-o header-icon"></i>
-                        </a>
                     </div>
                 </div>
             </div>
@@ -58,7 +55,7 @@
         <div class="container-lg relative p-0">
             <nav class="navbar navbar-expand-lg bg-white navbar-light py-3 py-lg-0 pl-3 pl-lg-5">
                 <a href="" class="navbar-brand">
-                    <h1 class="m-0 text-secondary"><span class="text-primary">DRY</span>ME</h1>
+                    <h1 class="m-0 text-secondary"><span class="text-primary">EASY</span>BUBBLE<span class="text-primary">CLEAN</span></h1>
                 </a>
                 <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
                     <span class="navbar-toggler-icon"></span>
@@ -77,7 +74,7 @@
     </div>
 
     {{-- Carousel --}}
-    <div class="container-fluid p-0 mb-12">
+    <div class="container-fluid p-0 mb-24">
         <div class="carousel-container">
             <div id="header-carousel" class="carousel slide" data-ride="carousel">
                 <div class="carousel-inner">
@@ -119,8 +116,8 @@
     {{-- End Carousel --}}
 
     {{-- Learn about us --}}
-    <section id="about-us" class="container mb-8">
-        <div class="row">
+    <section id="about-us" class="container mb-32">
+        <div class="row mb-32">
             <div class="col-12 col-md-6">
                 <img src="images/about-us.jpg" class="about-img w-full" alt="About-us">
             </div>
@@ -134,29 +131,29 @@
 
         <h1 class="justify-center text-center mt-7 mb-4">WHY CHOOSE US</h1>
 
-        <div class="row">
-            <div class="col-sm-12 col-md-4">
-                <div class="item bg-white text-center p-6 border border-solid border-gray-200 rounded-lg shadow-lg">
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div class="group relative rounded-xl">
+                <div class="item  text-center p-6 border border-solid border-gray-300 rounded-lg shadow transition duration-300 ease-in-out transform hover:scale-105 hover:bg-red-500 hover:text-white">
                     <img src="images/washer.png" class="about-img w-24 h-auto m-auto" alt="washer">
-                    <h6 class="text-xl font-semibold mt-4">Modern Equipment</h6>
+                    <p class="text-xl font-bold mt-4 hover:text-white">Modern Equipment</p>
                     <p class="mt-4">
                         We invest in the latest laundry technology and equipment to ensure your clothes are treated with the utmost care and efficiency.
                     </p>
                 </div>
             </div>
-            <div class="col-sm-12 col-md-4">
-                <div class="item bg-white text-center p-6 border border-solid border-gray-200 rounded-lg shadow-lg">
+            <div class="group relative rounded-xl">
+                <div class="item   text-center p-6 border border-solid border-gray-300 rounded-lg shadow transition duration-300 ease-in-out transform hover:scale-105 hover:bg-red-500 hover:text-white">
                     <img src="images/staff.png" class="about-img w-24 h-auto m-auto" alt="staff">
-                    <h6 class="text-xl font-semibold mt-4">Professional Care</h6>
+                    <p class="text-xl font-bold mt-4">Professional Care</p>
                     <p class="mt-4">
                         Our experienced staff takes pride in providing expert care for your garments, ensuring they look their best after every wash.
                     </p>
                 </div>
             </div>
-            <div class="col-sm-12 col-md-4">
-                <div class="item bg-white text-center p-6 border border-solid border-gray-200 rounded-lg shadow-lg">
+            <div class="group relative rounded-xl">
+                <div class="item   text-center p-6 border border-solid border-gray-300 rounded-lg shadow transition duration-300 ease-in-out transform hover:scale-105 hover:bg-red-500 hover:text-white">
                     <img src="images/247.png" class="about-img w-24 h-auto m-auto" alt="24/7">
-                    <h6 class="text-xl font-semibold mt-4">24/7 Availability</h6>
+                    <p class="text-xl font-bold mt-4">24/7 Availability</p>
                     <p class="mt-4">
                         We are here for you around the clock, providing 24/7 support to address any questions or concerns you may have regarding our laundry services.
                     </p>
@@ -164,10 +161,11 @@
             </div>
         </div>
 
+
     </section>
 
 
-    <section id="service" class="container mb-8">
+    <section id="service" class="container mb-32">
         <h1 class="title text-center capitalize mb-4">OUR SERVICES</h1>
 
         <div class="row">
@@ -256,8 +254,152 @@
         </div>
     </section>
 
+    <section id="supporting-business" class="container mb-32">
+        <h1 class="title text-center capitalize mb-4">Supporting Business</h1>
 
-    <section id="contact" class="container mb-0">
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+            <!-- Professional Attires -->
+            <div class="service-card border border-black p-4 mx-auto">
+                <div class="flex items-center mb-4">
+                    <div class="col-12 col-md-6 mx-auto">
+                        <img src="images/professional.png" alt="Professional Attires">
+                    </div>
+                </div>
+                <div class="service-content text-center">
+                    <h2 class="service-title text-xl font-semibold">Professional Attires</h2>
+                    <p class="service-description mt-2">
+                        We ensure that your professional attire is cleaned and maintained to the highest standards.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Airbnb & Hotels -->
+            <div class="service-card border border-black p-4">
+                <div class="flex items-center mb-4">
+                    <div class="col-12 col-md-6 mx-auto">
+                        <img src="images/airbnb.png" alt="Airbnb & Hotels">
+                    </div>
+                </div>
+                <div class="service-content text-center">
+                    <h2 class="service-title text-xl font-semibold">Airbnb & Hotels</h2>
+                    <p class="service-description mt-2">
+                        We provide top-notch laundry services for Airbnb and hotel linens to ensure guest satisfaction.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Rehab & Therapy -->
+            <div class="service-card border border-black p-4">
+                <div class="flex items-center mb-4">
+                    <div class="col-12 col-md-6 mx-auto">
+                        <img src="images/rehab.png" alt="Rehab & Therapy">
+                    </div>
+                </div>
+                <div class="service-content text-center">
+                    <h2 class="service-title text-xl font-semibold">Rehab & Therapy</h2>
+                    <p class="service-description mt-2">
+                        We offer specialized laundry services for rehab and therapy facilities to maintain hygiene.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Confinement Centres -->
+            <div class="service-card border border-black p-4">
+                <div class="flex items-center mb-4">
+                    <div class="col-12 col-md-6 mx-auto">
+                        <img src="images/confinement.png" alt="Confinement Centres">
+                    </div>
+                </div>
+                <div class="service-content text-center">
+                    <h2 class="service-title text-xl font-semibold">Confinement Centres</h2>
+                    <p class="service-description mt-2">
+                        We cater to the laundry needs of confinement centres with special care and attention.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Salon -->
+            <div class="service-card border border-black p-4">
+                <div class="flex items-center mb-4">
+                    <div class="col-12 col-md-6 mx-auto">
+                        <img src="images/salon.png" alt="Salon">
+                    </div>
+                </div>
+                <div class="service-content text-center">
+                    <h2 class="service-title text-xl font-semibold">Salon</h2>
+                    <p class="service-description mt-2">
+                        We handle salon towels and linens to ensure a clean and comfortable experience for clients.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Beauty & Spa -->
+            <div class="service-card border border-black p-4">
+                <div class="flex items-center mb-4">
+                    <div class="col-12 col-md-6 mx-auto">
+                        <img src="images/beauty-spa.png" alt="Beauty & Spa">
+                    </div>
+                </div>
+                <div class="service-content text-center">
+                    <h2 class="service-title text-xl font-semibold">Beauty & Spa</h2>
+                    <p class="service-description mt-2">
+                        We maintain the cleanliness of linens and robes for beauty and spa establishments.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Gym & Training -->
+            <div class="service-card border border-black p-4">
+                <div class="flex items-center mb-4">
+                    <div class="col-12 col-md-6 mx-auto">
+                        <img src="images/gym.png" alt="Gym & Training">
+                    </div>
+                </div>
+                <div class="service-content text-center">
+                    <h2 class="service-title text-xl font-semibold">Gym & Training</h2>
+                    <p class="service-description mt-2">
+                        We handle gym towels and uniforms to maintain hygiene and cleanliness.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Restaurant -->
+            <div class="service-card border border-black p-4">
+                <div class="flex items-center mb-4">
+                    <div class="col-12 col-md-6 mx-auto">
+                        <img src="images/restaurant.png" alt="Restaurant">
+                    </div>
+                </div>
+                <div class="service-content text-center">
+                    <h2 class="service-title text-xl font-semibold">Restaurant</h2>
+                    <p class="service-description mt-2">
+                        We ensure restaurant linens and uniforms are cleaned to the highest standards.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Others -->
+            <div class="service-card border border-black p-4">
+                <div class="flex items-center mb-4">
+                    <div class="col-12 col-md-6 mx-auto">
+                        <img src="images/others.png" alt="Others">
+                    </div>
+                </div>
+                <div class="service-content text-center">
+                    <h2 class="service-title text-xl font-semibold">Others</h2>
+                    <p class="service-description mt-2">
+                        We offer laundry solutions for various businesses, ensuring cleanliness and hygiene.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+    <section id="contact" class="container mb-32">
         <h1 class="title text-center mb-3">CONTACT US</h1>
         <p class="contact-content text-center">
             Invidunt lorem justo sanctus clita. Erat lorem labore ea, justo dolor lorem ipsum ut sed eos,
@@ -284,7 +426,7 @@
         </div>
     </section>
 
-    <section id="delivery-service" class="container mb-8">
+    <section id="delivery-service" class="container mb-32">
         <h1 class="title text-center capitalize mb-4">LAUNDRY DELIVERY SERVICE</h1>
 
         <div class="row">
@@ -349,8 +491,8 @@
                     </p>
 
                     <div class="social-link mt-3">
-                        <i class="fa fa-facebook-f footer-social-icon mr-3 text-white"></i>
-                        <i class="fa fa-whatsapp footer-social-icon text-white"></i>
+                        <i class="fa fa-facebook-f footer-social-icon mr-3 text-white fa-lg"></i>
+                        <i class="fa fa-whatsapp footer-social-icon text-white fa-lg"></i>
                     </div>
                 </div>
 
@@ -362,11 +504,11 @@
                         Everyone is encouraged to come and visit our store.
                     </p>
                     <div class="shop-contact mt-3 flex flex-row">
-                        <i class="fa fa-map-marker footer-icon mr-3 text-white mt-1"></i>
+                        <i class="fa fa-map-marker footer-icon mr-3 text-white mt-1 fa-lg"></i>
                         <p class="text-white">123 Street, New York, USA</p>
                     </div>
                     <div class="shop-contact mt-2 flex flex-row">
-                        <i class="fa fa-phone footer-icon mr-3 text-white mt-1"></i>
+                        <i class="fa fa-phone footer-icon mr-3 text-white mt-1 fa-lg"></i>
                         <p class="text-white">0111258754</p>
                     </div>
                 </div>

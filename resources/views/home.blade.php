@@ -42,6 +42,7 @@
                             <i class="fa fa-phone header-icon"></i>
                         </a>
                         <p class="text-white">+6018-235 8815</p>
+                        <i class="fa fa-whatsapp footer-social-icon text-white fa-lg px-3 pt-1"></i>
                     </div>
                 </div>
                 <div class="col-md-6 text-center text-lg-right">
@@ -245,9 +246,9 @@
                         <img src="images/sock.png" class="about-img h-36 w-auto m-auto" alt="sock">
                     </div>
                     <div class="service-content ml-4">
-                        <h2 class="service-title text-xl font-semibold">Sock and Garment Pairing</h2>
+                        <h2 class="service-title text-xl font-semibold">Alteration Service</h2>
                         <p class="service-description mt-2">
-                            We ensure that all your socks and garments are paired correctly after laundry.
+                            We provide skilled tailoring and adjustments to clothing, ensuring a perfect fit and enhancing the overall appearance and comfort.
                         </p>
                     </div>
                 </div>
@@ -258,9 +259,9 @@
                         <img src="images/garment.png" class="h-36 m-auto" alt="garment">
                     </div>
                     <div class="service-content ml-4 mb-7">
-                        <h2 class="service-title text-xl font-semibold">Garment Folding</h2>
+                        <h2 class="service-title text-xl font-semibold">Pickup & Delivery Service</h2>
                         <p class="service-description mt-2">
-                            We fold your garments neatly to make them easy to store and maintain.
+                            We offer the convenience of having items collected from one location and delivered to another.
                         </p>
                     </div>
                 </div>

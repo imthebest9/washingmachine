@@ -11,6 +11,7 @@
 
     <title>洗衣店</title>
 
+
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;800&display=swap" rel="stylesheet">
@@ -32,7 +33,7 @@
 </head>
 
 <body class="">
-    <div class="container-fluid bg-primary pt-3 pb-12 -mb-12">
+    <div class="container-fluid bg-primary pt-3 pb-14 -mb-[57px]">
         <div class="container">
             <div class="row">
                 <div class="col-md-6 text-center text-lg-left mb-lg-0">
@@ -51,27 +52,34 @@
         </div>
     </div>
 
-    <div class="relative container-fluid p-0 before:block before:content-[''] before:w-full before:h-1/2 before:top-0 before:left-0 before:bg-blue-500">
-        <div class="container-lg relative p-0 lg:px-3  z-30">
-            <nav class="navbar navbar-expand-lg bg-white navbar-light py-3 py-lg-0 pl-3 pl-lg-5">
-                <a href="" class="navbar-brand">
-                    <h1 class="m-0 text-secondary"><span class="text-primary">EASY</span>BUBBLE<span class="text-primary">CLEAN</span></h1>
-                </a>
-                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="navbar-collapse justify-content-between collapse px-3" id="navbarCollapse">
-                    <div class="navbar-nav ml-auto py-0">
-                        <a href="#" class="nav-item nav-link">Home</a>
-                        <a href="#about-us" class="nav-item nav-link">About</a>
-                        <a href="#service" class="nav-item nav-link">Services</a>
-                        <a href="#supporting" class="nav-item nav-link">Supporting</a>
-                        <a href="#contact" class="nav-item nav-link">Contact</a>
-                    </div>
+    <div class="relative container-fluid p-0 flex">
+        <div class="container-lg relative p-0 lg:px-3 z-30 flex flex-col">
+            <nav class="bg-white p-4 flex flex-col lg:flex-row">
+                <div class="container mx-auto flex justify-between items-center">
+                    <!-- Logo or Site Name -->
+                    <a href="" class="navbar-brand">
+                        <h1 class="m-0 text-secondary"><span class="text-primary">EASY</span>BUBBLE<span class="text-primary">CLEAN</span></h1>
+                    </a>
+
+                    <!-- Toggle Button (Visible on Small Screens) -->
+                    <button class="lg:hidden block hover:text-gray-300 focus:outline-none focus:text-gray-300" id="navbar-toggle">
+                        <svg class="w-6 h-6 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M2 5C2 4.44772 2.44772 4 3 4H21C21.5523 4 22 4.44772 22 5C22 5.55228 21.5523 6 21 6H3C2.44772 6 2 5.55228 2 5ZM21 10C21.5523 10 22 10.4477 22 11C22 11.5523 21.5523 12 21 12H3C2.44772 12 2 11.5523 2 11C2 10.4477 2.44772 10 3 10H21ZM21 16C21.5523 16 22 16.4477 22 17C22 17.5523 21.5523 18 21 18H3C2.44772 18 2 17.5523 2 17C2 16.4477 2.44772 16 3 16H21Z" />
+                        </svg>
+                    </button>
+                </div>
+
+                <!-- Navigation Links (Hidden by Default on Small Screens) -->
+                <div class="hidden lg:flex lg:items-left lg:text-left flex-col space-x-0 lg:space-x-6 lg:flex-row ml-16" id="navbar-links">
+                    <a href="#" class="block lg:inline-block lg:mt-0 text-left lg:text-left opacity-50 px-2 py-3 font-bold hover:no-underline hover:text-gray-600">Home</a>
+                    <a href="#about-us" class="block lg:inline-block lg:mt-0 text-left lg:text-left opacity-50 px-2 py-3 font-bold hover:no-underline hover:text-gray-600">About</a>
+                    <a href="#service" class="block lg:inline-block lg:mt-0 text-left lg:text-left opacity-50 px-2 py-3 font-bold hover:no-underline hover:text-gray-600">Services</a>
+                    <a href="#contact" class="block lg:inline-block lg:mt-0 text-left lg:text-left opacity-50 px-2 py-3 font-bold hover:no-underline hover:text-gray-600">Contact</a>
                 </div>
             </nav>
         </div>
     </div>
+
 
 
 
@@ -126,14 +134,14 @@
             <div class="col-12 col-md-6">
                 <h1 class="title mb-5">ABOUT US</h1>
                 <p class="about-content">
-                    At DRYME, we are dedicated to providing top-quality laundry services with a commitment to excellence. Our mission is to make your laundry experience as convenient and hassle-free as possible.
+                    At EASYBUBBLECLEAN, we are dedicated to providing top-quality laundry services with a commitment to excellence. Our mission is to make your laundry experience as convenient and hassle-free as possible.
                 </p>
             </div>
         </div>
 
         <h1 class="justify-center text-center mt-7 mb-4">WHY CHOOSE US</h1>
 
-        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div class="grid grid-cols-3 gap-8">
             <div class="group relative rounded-xl">
                 <div class="item text-center p-6 border border-solid border-gray-300 rounded-lg shadow transition-transform duration-300 ease-in-out transform hover:scale-105 hover:bg-red-500 hover:text-white">
                     <img src="images/washer.png" class=" w-24 h-auto m-auto transition-opacity duration-300 group-hover:hidden" alt="washer">
@@ -582,6 +590,15 @@
                     }
                 );
             }
+        });
+    });
+
+    document.addEventListener('DOMContentLoaded', function() {
+        const toggleButton = document.getElementById('navbar-toggle');
+        const navbarLinks = document.getElementById('navbar-links');
+
+        toggleButton.addEventListener('click', function() {
+            navbarLinks.classList.toggle('hidden');
         });
     });
 </script>

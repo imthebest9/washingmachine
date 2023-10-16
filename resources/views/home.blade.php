@@ -42,7 +42,9 @@
                             <i class="fa fa-phone header-icon"></i>
                         </a>
                         <p class="text-white">+6018-235 8815</p>
-                        <i class="fa fa-whatsapp footer-social-icon text-white fa-lg px-3 pt-1"></i>
+                        <a href="https://api.whatsapp.com/send?phone=601128289731&text=I want to make an appointment" target="_blank">
+                            <i class="fa fa-whatsapp footer-social-icon text-white fa-lg px-3 pt-1"></i>
+                        </a>
                     </div>
                 </div>
                 <div class="col-md-6 text-center text-lg-right">
@@ -507,7 +509,9 @@
 
                     <div class="social-link mt-3 flex space-x-4">
                         <i class="fa fa-facebook-f footer-social-icon mr-3 text-white fa-4x"></i>
-                        <i class="fa fa-whatsapp footer-social-icon text-white fa-4x"></i>
+                        <a href="https://api.whatsapp.com/send?phone=601128289731&text=I want to make an appointment" target="_blank">
+                            <i class="fa fa-whatsapp footer-social-icon text-white fa-4x"></i>
+                        </a>
                     </div>
                 </div>
 

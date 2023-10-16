@@ -40,7 +40,7 @@
                         <a class="text-white px-3" href="">
                             <i class="fa fa-phone header-icon"></i>
                         </a>
-                        <p class="text-white">+60111258754</p>
+                        <p class="text-white">+6018-235 8815</p>
                     </div>
                 </div>
                 <div class="col-md-6 text-center text-lg-right">
@@ -51,8 +51,8 @@
         </div>
     </div>
 
-    <div class="relative z-30 ">
-        <div class="container-lg relative p-0">
+    <div class="relative container-fluid p-0 before:block before:content-[''] before:w-full before:h-1/2 before:top-0 before:left-0 before:bg-blue-500">
+        <div class="container-lg relative p-0 lg:px-3  z-30">
             <nav class="navbar navbar-expand-lg bg-white navbar-light py-3 py-lg-0 pl-3 pl-lg-5">
                 <a href="" class="navbar-brand">
                     <h1 class="m-0 text-secondary"><span class="text-primary">EASY</span>BUBBLE<span class="text-primary">CLEAN</span></h1>
@@ -60,7 +60,7 @@
                 <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class=" navbar-collapse justify-content-between" id="navbarCollapse">
+                <div class="navbar-collapse justify-content-between collapse px-3" id="navbarCollapse">
                     <div class="navbar-nav ml-auto py-0">
                         <a href="#" class="nav-item nav-link">Home</a>
                         <a href="#about-us" class="nav-item nav-link">About</a>
@@ -72,6 +72,8 @@
             </nav>
         </div>
     </div>
+
+
 
     {{-- Carousel --}}
     <div class="container-fluid p-0 mb-24">
@@ -431,13 +433,13 @@
     </section>
 
     <section id="delivery-service" class="container mb-32">
-        <h1 class="title text-center capitalize mb-4">LAUNDRY DELIVERY SERVICE</h1>
+        <h1 class="title text-center capitalize mb-4">PICKUP & DELIVERY SERVICE</h1>
 
         <div class="row">
             <div class="col-md-3">
-                <div class="step-card text-center">
-                    <div class="step-number bg-primary text-white rounded-full py-2 ">
-                        <span>1</span>
+                <div class="step-card text-center flex flex-col">
+                    <div class="step-number bg-primary text-white rounded-full py-2 mx-auto w-12 ">
+                        <span class="text-2xl">1</span>
                     </div>
                     <h2 class="step-title text-xl font-semibold mt-4">Schedule Pickup</h2>
                     <p class="step-description mt-2">
@@ -446,9 +448,9 @@
                 </div>
             </div>
             <div class="col-md-3">
-                <div class="step-card text-center">
-                    <div class="step-number bg-primary text-white rounded-full py-2">
-                        <span>2</span>
+                <div class="step-card text-center flex flex-col">
+                    <div class="step-number bg-primary text-white rounded-full py-2 mx-auto w-12">
+                        <span class="text-2xl">2</span>
                     </div>
                     <h2 class="step-title text-xl font-semibold mt-4">Laundry Collection</h2>
                     <p class="step-description mt-2">
@@ -458,8 +460,8 @@
             </div>
             <div class="col-md-3">
                 <div class="step-card text-center">
-                    <div class="step-number bg-primary text-white rounded-full py-2">
-                        <span>3</span>
+                    <div class="step-number bg-primary text-white rounded-full py-2 mx-auto w-12">
+                        <span class="text-2xl">3</span>
                     </div>
                     <h2 class="step-title text-xl font-semibold mt-4">Expert Cleaning</h2>
                     <p class="step-description mt-2">
@@ -469,8 +471,8 @@
             </div>
             <div class="col-md-3">
                 <div class="step-card text-center">
-                    <div class="step-number bg-primary text-white rounded-full py-2">
-                        <span>4</span>
+                    <div class="step-number bg-primary text-white rounded-full py-2 mx-auto w-12">
+                        <span class="text-2xl">4</span>
                     </div>
                     <h2 class="step-title text-xl font-semibold mt-4">Express Delivery</h2>
                     <p class="step-description mt-2">
@@ -494,9 +496,9 @@
                         sed kasd et ipsum dolor duo dolor
                     </p>
 
-                    <div class="social-link mt-3">
-                        <i class="fa fa-facebook-f footer-social-icon mr-3 text-white fa-lg"></i>
-                        <i class="fa fa-whatsapp footer-social-icon text-white fa-lg"></i>
+                    <div class="social-link mt-3 flex space-x-4">
+                        <i class="fa fa-facebook-f footer-social-icon mr-3 text-white fa-4x"></i>
+                        <i class="fa fa-whatsapp footer-social-icon text-white fa-4x"></i>
                     </div>
                 </div>
 
@@ -509,11 +511,11 @@
                     </p>
                     <div class="shop-contact mt-3 flex flex-row">
                         <i class="fa fa-map-marker footer-icon mr-3 text-white mt-1 fa-lg"></i>
-                        <p class="text-white">123 Street, New York, USA</p>
+                        <p class="text-white">PS,G-5, Residensi Lakeville, No.68, Jalan Sibu, Taman Wahyu, 68100 Batu Caves, Selangor.</p>
                     </div>
                     <div class="shop-contact mt-2 flex flex-row">
                         <i class="fa fa-phone footer-icon mr-3 text-white mt-1 fa-lg"></i>
-                        <p class="text-white">0111258754</p>
+                        <p class="text-white">018-235 8815</p>
                     </div>
                 </div>
 
